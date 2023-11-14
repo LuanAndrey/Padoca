@@ -76,13 +76,15 @@
             // 
             // btnEntrar
             // 
+            this.btnEntrar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEntrar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.Location = new System.Drawing.Point(60, 163);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(192, 23);
             this.btnEntrar.TabIndex = 4;
             this.btnEntrar.Text = "ENTRAR";
-            this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // lblTitulo

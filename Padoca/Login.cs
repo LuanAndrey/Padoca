@@ -33,13 +33,13 @@ namespace Padoca
                 usuario.NomeCompleto = resultado.Rows[0]["nome_completo"].ToString();
                 usuario.Id = (int)resultado.Rows[0]["id"];
                 // Proximo passo: abrir a janela menu:
-                MenuPrincipal janela = new MenuPrincipal();
+                MenuPrincipal janela = new MenuPrincipal(usuario);
                 // Esconder a janela atual:
-                Hide();
+                this.Hide();
                 // Mostrar o menu:
                 janela.ShowDialog();
                 // Mostar o login quando o menu fechar:
-                Show();
+                this.Show();
             }
             else
             {
