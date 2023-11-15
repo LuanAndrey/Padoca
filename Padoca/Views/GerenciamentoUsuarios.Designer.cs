@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GerenciamentoUsuarios));
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.grbCadastro = new System.Windows.Forms.GroupBox();
-            this.lblNomeCad = new System.Windows.Forms.Label();
-            this.txbNomeCad = new System.Windows.Forms.TextBox();
-            this.lblEmailCad = new System.Windows.Forms.Label();
-            this.txbEmailCad = new System.Windows.Forms.TextBox();
-            this.lblSenhaCad = new System.Windows.Forms.Label();
-            this.txbSenhaCad = new System.Windows.Forms.TextBox();
             this.btnCadastarCad = new System.Windows.Forms.Button();
+            this.txbSenhaCad = new System.Windows.Forms.TextBox();
+            this.lblSenhaCad = new System.Windows.Forms.Label();
+            this.txbEmailCad = new System.Windows.Forms.TextBox();
+            this.lblEmailCad = new System.Windows.Forms.Label();
+            this.txbNomeCad = new System.Windows.Forms.TextBox();
+            this.lblNomeCad = new System.Windows.Forms.Label();
             this.grbEditar = new System.Windows.Forms.GroupBox();
             this.btnEditarEdit = new System.Windows.Forms.Button();
             this.txbSenhaEdit = new System.Windows.Forms.TextBox();
@@ -47,8 +47,8 @@
             this.txbNomeEdit = new System.Windows.Forms.TextBox();
             this.lblNomeEdit = new System.Windows.Forms.Label();
             this.grbApagar = new System.Windows.Forms.GroupBox();
-            this.lblApagar = new System.Windows.Forms.Label();
             this.btnApagar = new System.Windows.Forms.Button();
+            this.lblApagar = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.grbCadastro.SuspendLayout();
@@ -88,60 +88,6 @@
             this.grbCadastro.TabStop = false;
             this.grbCadastro.Text = "Cadastro";
             // 
-            // lblNomeCad
-            // 
-            this.lblNomeCad.AutoSize = true;
-            this.lblNomeCad.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeCad.Location = new System.Drawing.Point(7, 23);
-            this.lblNomeCad.Name = "lblNomeCad";
-            this.lblNomeCad.Size = new System.Drawing.Size(88, 15);
-            this.lblNomeCad.TabIndex = 0;
-            this.lblNomeCad.Text = "Nome Completo:";
-            // 
-            // txbNomeCad
-            // 
-            this.txbNomeCad.Font = new System.Drawing.Font("Comic Sans MS", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNomeCad.Location = new System.Drawing.Point(101, 22);
-            this.txbNomeCad.Name = "txbNomeCad";
-            this.txbNomeCad.Size = new System.Drawing.Size(93, 20);
-            this.txbNomeCad.TabIndex = 1;
-            // 
-            // lblEmailCad
-            // 
-            this.lblEmailCad.AutoSize = true;
-            this.lblEmailCad.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmailCad.Location = new System.Drawing.Point(57, 54);
-            this.lblEmailCad.Name = "lblEmailCad";
-            this.lblEmailCad.Size = new System.Drawing.Size(38, 15);
-            this.lblEmailCad.TabIndex = 2;
-            this.lblEmailCad.Text = "Email:";
-            // 
-            // txbEmailCad
-            // 
-            this.txbEmailCad.Font = new System.Drawing.Font("Comic Sans MS", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbEmailCad.Location = new System.Drawing.Point(101, 53);
-            this.txbEmailCad.Name = "txbEmailCad";
-            this.txbEmailCad.Size = new System.Drawing.Size(93, 20);
-            this.txbEmailCad.TabIndex = 3;
-            // 
-            // lblSenhaCad
-            // 
-            this.lblSenhaCad.AutoSize = true;
-            this.lblSenhaCad.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenhaCad.Location = new System.Drawing.Point(53, 82);
-            this.lblSenhaCad.Name = "lblSenhaCad";
-            this.lblSenhaCad.Size = new System.Drawing.Size(42, 15);
-            this.lblSenhaCad.TabIndex = 4;
-            this.lblSenhaCad.Text = "Senha:";
-            // 
-            // txbSenhaCad
-            // 
-            this.txbSenhaCad.Font = new System.Drawing.Font("Comic Sans MS", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSenhaCad.Location = new System.Drawing.Point(101, 81);
-            this.txbSenhaCad.Name = "txbSenhaCad";
-            this.txbSenhaCad.Size = new System.Drawing.Size(93, 20);
-            this.txbSenhaCad.TabIndex = 5;
-            // 
             // btnCadastarCad
             // 
             this.btnCadastarCad.BackColor = System.Drawing.Color.PaleGreen;
@@ -154,6 +100,60 @@
             this.btnCadastarCad.Text = "Cadastrar";
             this.btnCadastarCad.UseVisualStyleBackColor = false;
             this.btnCadastarCad.Click += new System.EventHandler(this.btnCadastarCad_Click);
+            // 
+            // txbSenhaCad
+            // 
+            this.txbSenhaCad.Font = new System.Drawing.Font("Comic Sans MS", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbSenhaCad.Location = new System.Drawing.Point(101, 81);
+            this.txbSenhaCad.Name = "txbSenhaCad";
+            this.txbSenhaCad.Size = new System.Drawing.Size(93, 20);
+            this.txbSenhaCad.TabIndex = 5;
+            // 
+            // lblSenhaCad
+            // 
+            this.lblSenhaCad.AutoSize = true;
+            this.lblSenhaCad.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenhaCad.Location = new System.Drawing.Point(53, 82);
+            this.lblSenhaCad.Name = "lblSenhaCad";
+            this.lblSenhaCad.Size = new System.Drawing.Size(42, 15);
+            this.lblSenhaCad.TabIndex = 4;
+            this.lblSenhaCad.Text = "Senha:";
+            // 
+            // txbEmailCad
+            // 
+            this.txbEmailCad.Font = new System.Drawing.Font("Comic Sans MS", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbEmailCad.Location = new System.Drawing.Point(101, 53);
+            this.txbEmailCad.Name = "txbEmailCad";
+            this.txbEmailCad.Size = new System.Drawing.Size(93, 20);
+            this.txbEmailCad.TabIndex = 3;
+            // 
+            // lblEmailCad
+            // 
+            this.lblEmailCad.AutoSize = true;
+            this.lblEmailCad.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailCad.Location = new System.Drawing.Point(57, 54);
+            this.lblEmailCad.Name = "lblEmailCad";
+            this.lblEmailCad.Size = new System.Drawing.Size(38, 15);
+            this.lblEmailCad.TabIndex = 2;
+            this.lblEmailCad.Text = "Email:";
+            // 
+            // txbNomeCad
+            // 
+            this.txbNomeCad.Font = new System.Drawing.Font("Comic Sans MS", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNomeCad.Location = new System.Drawing.Point(101, 22);
+            this.txbNomeCad.Name = "txbNomeCad";
+            this.txbNomeCad.Size = new System.Drawing.Size(93, 20);
+            this.txbNomeCad.TabIndex = 1;
+            // 
+            // lblNomeCad
+            // 
+            this.lblNomeCad.AutoSize = true;
+            this.lblNomeCad.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeCad.Location = new System.Drawing.Point(7, 23);
+            this.lblNomeCad.Name = "lblNomeCad";
+            this.lblNomeCad.Size = new System.Drawing.Size(88, 15);
+            this.lblNomeCad.TabIndex = 0;
+            this.lblNomeCad.Text = "Nome Completo:";
             // 
             // grbEditar
             // 
@@ -184,6 +184,7 @@
             this.btnEditarEdit.TabIndex = 6;
             this.btnEditarEdit.Text = "Editar";
             this.btnEditarEdit.UseVisualStyleBackColor = false;
+            this.btnEditarEdit.Click += new System.EventHandler(this.btnEditarEdit_Click);
             // 
             // txbSenhaEdit
             // 
@@ -252,16 +253,6 @@
             this.grbApagar.TabStop = false;
             this.grbApagar.Text = "Apagar";
             // 
-            // lblApagar
-            // 
-            this.lblApagar.AutoSize = true;
-            this.lblApagar.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApagar.Location = new System.Drawing.Point(7, 31);
-            this.lblApagar.Name = "lblApagar";
-            this.lblApagar.Size = new System.Drawing.Size(172, 15);
-            this.lblApagar.TabIndex = 0;
-            this.lblApagar.Text = "Selecione o usuário para apagar";
-            // 
             // btnApagar
             // 
             this.btnApagar.BackColor = System.Drawing.Color.LightCoral;
@@ -274,6 +265,16 @@
             this.btnApagar.Text = "Apagar";
             this.btnApagar.UseVisualStyleBackColor = false;
             this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
+            // 
+            // lblApagar
+            // 
+            this.lblApagar.AutoSize = true;
+            this.lblApagar.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApagar.Location = new System.Drawing.Point(7, 31);
+            this.lblApagar.Name = "lblApagar";
+            this.lblApagar.Size = new System.Drawing.Size(172, 15);
+            this.lblApagar.TabIndex = 0;
+            this.lblApagar.Text = "Selecione o usuário para apagar";
             // 
             // lblTitulo
             // 
