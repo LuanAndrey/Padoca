@@ -22,6 +22,7 @@ namespace Padoca.Views
 
             // Atribuir a tabela (resultado do SELECT) no DGV:
             dgvUsuarios.DataSource = usuario.ListarTudo();
+
         }
 
         private void btnCadastarCad_Click(object sender, EventArgs e)

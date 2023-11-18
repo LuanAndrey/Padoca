@@ -32,7 +32,6 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.grbCadastro = new System.Windows.Forms.GroupBox();
             this.btnCadastrarCad = new System.Windows.Forms.Button();
-            this.txbCategoriaCad = new System.Windows.Forms.TextBox();
             this.txbPrecoCad = new System.Windows.Forms.TextBox();
             this.txbNomeCad = new System.Windows.Forms.TextBox();
             this.lblCategoriaCad = new System.Windows.Forms.Label();
@@ -43,13 +42,14 @@
             this.lblApagar = new System.Windows.Forms.Label();
             this.grbEditar = new System.Windows.Forms.GroupBox();
             this.btnEditarEdit = new System.Windows.Forms.Button();
-            this.txbCategoriaEdit = new System.Windows.Forms.TextBox();
             this.txbPrecoEdit = new System.Windows.Forms.TextBox();
             this.txbNomeEdit = new System.Windows.Forms.TextBox();
             this.lblCategoriaEdit = new System.Windows.Forms.Label();
             this.lblPrecoEdit = new System.Windows.Forms.Label();
             this.lblNomeEdit = new System.Windows.Forms.Label();
             this.lblUsuarioLogado = new System.Windows.Forms.Label();
+            this.cmbCategoriasCad = new System.Windows.Forms.ComboBox();
+            this.cmbEditarEdit = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             this.grbCadastro.SuspendLayout();
             this.grbApagar.SuspendLayout();
@@ -70,7 +70,7 @@
             this.dgvProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvProdutos.Size = new System.Drawing.Size(564, 232);
             this.dgvProdutos.TabIndex = 0;
-            this.dgvProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellClick);
+            this.dgvProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellClick);
             // 
             // lblTitulo
             // 
@@ -84,8 +84,8 @@
             // 
             // grbCadastro
             // 
+            this.grbCadastro.Controls.Add(this.cmbCategoriasCad);
             this.grbCadastro.Controls.Add(this.btnCadastrarCad);
-            this.grbCadastro.Controls.Add(this.txbCategoriaCad);
             this.grbCadastro.Controls.Add(this.txbPrecoCad);
             this.grbCadastro.Controls.Add(this.txbNomeCad);
             this.grbCadastro.Controls.Add(this.lblCategoriaCad);
@@ -111,14 +111,6 @@
             this.btnCadastrarCad.Text = "Cadastrar";
             this.btnCadastrarCad.UseVisualStyleBackColor = false;
             this.btnCadastrarCad.Click += new System.EventHandler(this.btnCadastrarCad_Click);
-            // 
-            // txbCategoriaCad
-            // 
-            this.txbCategoriaCad.Font = new System.Drawing.Font("Comic Sans MS", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbCategoriaCad.Location = new System.Drawing.Point(72, 90);
-            this.txbCategoriaCad.Name = "txbCategoriaCad";
-            this.txbCategoriaCad.Size = new System.Drawing.Size(165, 20);
-            this.txbCategoriaCad.TabIndex = 5;
             // 
             // txbPrecoCad
             // 
@@ -203,8 +195,8 @@
             // 
             // grbEditar
             // 
+            this.grbEditar.Controls.Add(this.cmbEditarEdit);
             this.grbEditar.Controls.Add(this.btnEditarEdit);
-            this.grbEditar.Controls.Add(this.txbCategoriaEdit);
             this.grbEditar.Controls.Add(this.txbPrecoEdit);
             this.grbEditar.Controls.Add(this.txbNomeEdit);
             this.grbEditar.Controls.Add(this.lblCategoriaEdit);
@@ -230,14 +222,6 @@
             this.btnEditarEdit.Text = "Editar";
             this.btnEditarEdit.UseVisualStyleBackColor = false;
             this.btnEditarEdit.Click += new System.EventHandler(this.btnEditarEdit_Click);
-            // 
-            // txbCategoriaEdit
-            // 
-            this.txbCategoriaEdit.Font = new System.Drawing.Font("Comic Sans MS", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbCategoriaEdit.Location = new System.Drawing.Point(72, 90);
-            this.txbCategoriaEdit.Name = "txbCategoriaEdit";
-            this.txbCategoriaEdit.Size = new System.Drawing.Size(165, 20);
-            this.txbCategoriaEdit.TabIndex = 8;
             // 
             // txbPrecoEdit
             // 
@@ -293,6 +277,26 @@
             this.lblUsuarioLogado.Size = new System.Drawing.Size(0, 13);
             this.lblUsuarioLogado.TabIndex = 5;
             // 
+            // cmbCategoriasCad
+            // 
+            this.cmbCategoriasCad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoriasCad.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCategoriasCad.FormattingEnabled = true;
+            this.cmbCategoriasCad.Location = new System.Drawing.Point(72, 87);
+            this.cmbCategoriasCad.Name = "cmbCategoriasCad";
+            this.cmbCategoriasCad.Size = new System.Drawing.Size(165, 23);
+            this.cmbCategoriasCad.TabIndex = 7;
+            // 
+            // cmbEditarEdit
+            // 
+            this.cmbEditarEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEditarEdit.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEditarEdit.FormattingEnabled = true;
+            this.cmbEditarEdit.Location = new System.Drawing.Point(72, 87);
+            this.cmbEditarEdit.Name = "cmbEditarEdit";
+            this.cmbEditarEdit.Size = new System.Drawing.Size(165, 23);
+            this.cmbEditarEdit.TabIndex = 8;
+            // 
             // GerenciamentoProdutos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,9 +337,7 @@
         private System.Windows.Forms.Label lblCategoriaEdit;
         private System.Windows.Forms.Label lblPrecoEdit;
         private System.Windows.Forms.Label lblNomeEdit;
-        private System.Windows.Forms.TextBox txbCategoriaCad;
         private System.Windows.Forms.TextBox txbPrecoCad;
-        private System.Windows.Forms.TextBox txbCategoriaEdit;
         private System.Windows.Forms.TextBox txbPrecoEdit;
         private System.Windows.Forms.TextBox txbNomeEdit;
         private System.Windows.Forms.Label lblApagar;
@@ -343,5 +345,7 @@
         private System.Windows.Forms.Button btnCadastrarCad;
         private System.Windows.Forms.Label lblUsuarioLogado;
         private System.Windows.Forms.Button btnEditarEdit;
+        private System.Windows.Forms.ComboBox cmbCategoriasCad;
+        private System.Windows.Forms.ComboBox cmbEditarEdit;
     }
 }
