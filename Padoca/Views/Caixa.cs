@@ -28,9 +28,21 @@ namespace Padoca.Views
                 Classes.OrdemComanda ordem = new Classes.OrdemComanda();
                 ordem.IdFicha = int.Parse(txbNumeroComanda.Text);
                 var r = ordem.BuscarFicha();
-                dgvFicha.DataSource = r;
-                // Atualizar o valor total:
-                lblTotal.Text = "R$ " + r.Compute("SUM(Total_item)", "True").ToString();
+                if(r.Rows.Count > 0)
+                {
+                    dgvFicha.DataSource = r;
+                    // Atualizar o valor total:
+                    lblTotal.Text = "R$ " + r.Compute("SUM(Total_item)", "True").ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Não existem lançamentos nessa comanda!", "Aviso",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Limpar o dgv:
+                    dgvFicha.DataSource = null;
+                    lblTotal.Text = "R$ 0,00";
+                    txbNumeroComanda.Clear();
+                }
             }
             else
             {

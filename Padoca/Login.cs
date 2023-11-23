@@ -34,6 +34,9 @@ namespace Padoca
                 usuario.Id = (int)resultado.Rows[0]["id"];
                 // Proximo passo: abrir a janela menu:
                 MenuPrincipal janela = new MenuPrincipal(usuario);
+                // Limpar os campos de login:
+                txbEmail.Clear();
+                txbSenha.Clear();
                 // Esconder a janela atual:
                 this.Hide();
                 // Mostrar o menu:
