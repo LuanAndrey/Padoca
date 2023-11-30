@@ -31,6 +31,7 @@
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.grbCadastro = new System.Windows.Forms.GroupBox();
+            this.cmbCategoriasCad = new System.Windows.Forms.ComboBox();
             this.btnCadastrarCad = new System.Windows.Forms.Button();
             this.txbPrecoCad = new System.Windows.Forms.TextBox();
             this.txbNomeCad = new System.Windows.Forms.TextBox();
@@ -41,6 +42,7 @@
             this.btnApagar = new System.Windows.Forms.Button();
             this.lblApagar = new System.Windows.Forms.Label();
             this.grbEditar = new System.Windows.Forms.GroupBox();
+            this.cmbEditarEdit = new System.Windows.Forms.ComboBox();
             this.btnEditarEdit = new System.Windows.Forms.Button();
             this.txbPrecoEdit = new System.Windows.Forms.TextBox();
             this.txbNomeEdit = new System.Windows.Forms.TextBox();
@@ -48,8 +50,6 @@
             this.lblPrecoEdit = new System.Windows.Forms.Label();
             this.lblNomeEdit = new System.Windows.Forms.Label();
             this.lblUsuarioLogado = new System.Windows.Forms.Label();
-            this.cmbCategoriasCad = new System.Windows.Forms.ComboBox();
-            this.cmbEditarEdit = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             this.grbCadastro.SuspendLayout();
             this.grbApagar.SuspendLayout();
@@ -71,6 +71,7 @@
             this.dgvProdutos.Size = new System.Drawing.Size(564, 232);
             this.dgvProdutos.TabIndex = 0;
             this.dgvProdutos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellClick);
+            this.dgvProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProdutos_CellContentClick);
             // 
             // lblTitulo
             // 
@@ -98,6 +99,16 @@
             this.grbCadastro.TabIndex = 2;
             this.grbCadastro.TabStop = false;
             this.grbCadastro.Text = "Cadastrar";
+            // 
+            // cmbCategoriasCad
+            // 
+            this.cmbCategoriasCad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoriasCad.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCategoriasCad.FormattingEnabled = true;
+            this.cmbCategoriasCad.Location = new System.Drawing.Point(72, 87);
+            this.cmbCategoriasCad.Name = "cmbCategoriasCad";
+            this.cmbCategoriasCad.Size = new System.Drawing.Size(165, 23);
+            this.cmbCategoriasCad.TabIndex = 7;
             // 
             // btnCadastrarCad
             // 
@@ -210,6 +221,16 @@
             this.grbEditar.TabStop = false;
             this.grbEditar.Text = "Editar";
             // 
+            // cmbEditarEdit
+            // 
+            this.cmbEditarEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEditarEdit.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEditarEdit.FormattingEnabled = true;
+            this.cmbEditarEdit.Location = new System.Drawing.Point(72, 87);
+            this.cmbEditarEdit.Name = "cmbEditarEdit";
+            this.cmbEditarEdit.Size = new System.Drawing.Size(165, 23);
+            this.cmbEditarEdit.TabIndex = 8;
+            // 
             // btnEditarEdit
             // 
             this.btnEditarEdit.BackColor = System.Drawing.Color.Wheat;
@@ -276,26 +297,6 @@
             this.lblUsuarioLogado.Name = "lblUsuarioLogado";
             this.lblUsuarioLogado.Size = new System.Drawing.Size(0, 13);
             this.lblUsuarioLogado.TabIndex = 5;
-            // 
-            // cmbCategoriasCad
-            // 
-            this.cmbCategoriasCad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCategoriasCad.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCategoriasCad.FormattingEnabled = true;
-            this.cmbCategoriasCad.Location = new System.Drawing.Point(72, 87);
-            this.cmbCategoriasCad.Name = "cmbCategoriasCad";
-            this.cmbCategoriasCad.Size = new System.Drawing.Size(165, 23);
-            this.cmbCategoriasCad.TabIndex = 7;
-            // 
-            // cmbEditarEdit
-            // 
-            this.cmbEditarEdit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbEditarEdit.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbEditarEdit.FormattingEnabled = true;
-            this.cmbEditarEdit.Location = new System.Drawing.Point(72, 87);
-            this.cmbEditarEdit.Name = "cmbEditarEdit";
-            this.cmbEditarEdit.Size = new System.Drawing.Size(165, 23);
-            this.cmbEditarEdit.TabIndex = 8;
             // 
             // GerenciamentoProdutos
             // 
